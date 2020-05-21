@@ -1,0 +1,63 @@
+package com.wonders.base.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import springfox.documentation.builders.ApiInfoBuilder;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger.web.*;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@Configuration
+@EnableSwagger2 //开启Swagger2
+public class SwaggerConfig {
+
+    //配置Swagger需要的Docket实例，可以配置多个实例，每个实例都是一个分组
+    @Bean
+    public Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("A分组")
+                .apiInfo(apiInfo())
+                //是否启动swagger2，默认是true，线上环境建议关闭
+                .enable(true)
+                .select()
+                // RequestHandlerSelectors 配置要扫描接口的方式
+                //      basePackage() 指定要扫描的包
+                //      any() 扫描全部
+                //      none() 不扫描
+                .apis(RequestHandlerSelectors.basePackage("com.wonders.base.example.controller"))
+                // Path 过滤路径
+                //      ant() 指定路径
+                //      any() 过滤所有
+                //      none() 不过滤
+                //      regex() 正则匹配过滤路径
+                .paths(PathSelectors.any())
+                .build();
+    }
+
+    private ApiInfo apiInfo() {
+        //配置swagger信息
+        return new ApiInfoBuilder()
+                .title("标题： swagger-api文档")
+                .description("描述： swagger接入教程")
+                .version("1.0")
+                .build();
+    }
+
+    @Bean
+    public Docket docket1(){
+        return new Docket(DocumentationType.SWAGGER_2).groupName("B分组");
+    }
+    @Bean
+    public Docket docket2(){
+        return new Docket(DocumentationType.SWAGGER_2).groupName("C分组");
+    }
+    @Bean
+    public Docket docket3(){
+        return new Docket(DocumentationType.SWAGGER_2).groupName("D分组");
+    }
+}

@@ -1,0 +1,13 @@
+com\wonders\base\common\CommonController.class
+com\wonders\base\common\CommonDao.class
+com\wonders\base\common\CommonDaoImpl.class
+com\wonders\base\example\entity\ExampleEntity.class
+com\wonders\base\common\CommonService.class
+com\wonders\base\filter\BaseFilter.class
+com\wonders\base\config\FilterConfig.class
+com\wonders\base\config\TransactionAdviceConfig.class
+com\wonders\base\BaseApplication.class
+com\wonders\base\common\CommonServiceImpl.class
+com\wonders\base\util\CookiesUtil.class
+com\wonders\base\filter\DefaultFilter.class
+com\wonders\base\example\controller\ExampleController.class

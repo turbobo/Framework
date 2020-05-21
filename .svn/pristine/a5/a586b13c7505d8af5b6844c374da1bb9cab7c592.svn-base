@@ -1,0 +1,72 @@
+Manifest-Version: 1.0
+Class-Path: rxnetty-servo-0.4.9.jar netflix-statistics-0.1.1.jar sprin
+ g-cloud-alibaba-nacos-config-0.2.1.RELEASE.jar jul-to-slf4j-1.7.26.ja
+ r spring-boot-starter-actuator-2.1.4.RELEASE.jar spring-beans-5.1.6.R
+ ELEASE.jar logback-classic-1.2.3.jar spring-cloud-alibaba-nacos-disco
+ very-0.2.1.RELEASE.jar rxjava-1.3.8.jar jackson-module-afterburner-2.
+ 9.8.jar spring-aop-5.1.6.RELEASE.jar tomcat-embed-el-9.0.17.jar hystr
+ ix-serialization-1.5.18.jar jackson-core-2.9.8.jar logback-core-1.2.3
+ .jar commons-io-2.4.jar spring-cloud-netflix-hystrix-2.1.0.RELEASE.ja
+ r jaxb-api-2.3.1.jar hibernate-validator-6.0.16.Final.jar tomcat-embe
+ d-websocket-9.0.17.jar spring-boot-actuator-2.1.4.RELEASE.jar rxnetty
+ -0.4.9.jar nacos-client-1.2.0.jar javax.transaction-api-1.3.jar sprin
+ g-cloud-netflix-archaius-2.1.0.RELEASE.jar spring-boot-starter-json-2
+ .1.4.RELEASE.jar commons-codec-1.11.jar nacos-common-1.2.0.jar javax.
+ annotation-api-1.3.2.jar spring-session-core-2.1.5.RELEASE.jar jboss-
+ logging-3.3.2.Final.jar javax.inject-1.jar validation-api-2.0.1.Final
+ .jar druid-spring-boot-starter-1.1.10.jar hibernate-core-5.3.9.Final.
+ jar commons-logging-1.1.1.jar jandex-2.0.5.Final.jar hystrix-core-1.5
+ .18.jar spring-jcl-5.1.6.RELEASE.jar spring-boot-starter-logging-2.1.
+ 4.RELEASE.jar javax.persistence-api-2.2.jar spring-boot-configuration
+ -processor-2.1.4.RELEASE.jar asm-5.0.4.jar nacos-discovery-spring-boo
+ t-autoconfigure-0.2.1.jar spring-cloud-netflix-zuul-2.1.0.RELEASE.jar
+  spring-tx-5.1.6.RELEASE.jar spring-boot-autoconfigure-2.1.4.RELEASE.
+ jar jsr311-api-1.1.1.jar byte-buddy-1.9.12.jar HdrHistogram-2.1.9.jar
+  spring-expression-5.1.6.RELEASE.jar ezmorph-1.0.6.jar json-lib-2.4-j
+ dk15.jar javax.activation-api-1.2.0.jar spring-data-commons-2.1.6.REL
+ EASE.jar guava-22.0.jar error_prone_annotations-2.0.18.jar animal-sni
+ ffer-annotations-1.14.jar lombok-1.18.6.jar nacos-config-spring-boot-
+ autoconfigure-0.2.1.jar zuul-core-1.3.1.jar spring-cloud-starter-netf
+ lix-zuul-2.1.0.RELEASE.jar nacos-spring-boot-base-0.2.1.jar mysql-con
+ nector-java-5.1.47.jar hibernate-commons-annotations-5.0.4.Final.jar 
+ spring-cloud-starter-netflix-archaius-2.1.0.RELEASE.jar bcpkix-jdk15o
+ n-1.60.jar ribbon-loadbalancer-2.3.0.jar spring-cloud-starter-netflix
+ -ribbon-2.1.0.RELEASE.jar classmate-1.4.0.jar log4j-to-slf4j-2.11.2.j
+ ar nacos-discovery-spring-boot-starter-0.2.1.jar spring-boot-starter-
+ 2.1.4.RELEASE.jar jersey-client-1.19.1.jar jackson-module-parameter-n
+ ames-2.9.8.jar ognl-3.2.1.jar antlr-2.7.7.jar javassist-3.20.0-GA.jar
+  spring-boot-starter-data-jdbc-2.1.4.RELEASE.jar spring-cloud-starter
+ -alibaba-nacos-config-0.2.1.RELEASE.jar spring-boot-actuator-autoconf
+ igure-2.1.4.RELEASE.jar httpcore-4.4.11.jar rxjava-reactive-streams-1
+ .2.1.jar spring-boot-starter-tomcat-2.1.4.RELEASE.jar snakeyaml-1.23.
+ jar spring-boot-2.1.4.RELEASE.jar spring-orm-5.1.6.RELEASE.jar jackso
+ n-annotations-2.9.0.jar spring-cloud-starter-2.1.0.RELEASE.jar aspect
+ jweaver-1.9.2.jar jsr305-1.3.9.jar reactive-streams-1.0.2.jar spring-
+ boot-starter-data-jpa-2.1.4.RELEASE.jar nacos-api-1.2.0.jar spring-da
+ ta-jdbc-1.0.6.RELEASE.jar spring-cloud-context-2.1.0.RELEASE.jar dom4
+ j-2.1.1.jar nacos-config-spring-boot-starter-0.2.1.jar slf4j-api-1.7.
+ 26.jar ribbon-core-2.3.0.jar spring-cloud-starter-alibaba-nacos-disco
+ very-0.2.1.RELEASE.jar commons-lang3-3.8.1.jar spring-web-5.1.6.RELEA
+ SE.jar spring-boot-starter-web-2.1.4.RELEASE.jar spring-security-rsa-
+ 1.0.7.RELEASE.jar hystrix-metrics-event-stream-1.5.18.jar HikariCP-3.
+ 2.0.jar simpleclient-0.5.0.jar jersey-apache-client4-1.19.1.jar j2obj
+ c-annotations-1.1.jar spring-core-5.1.6.RELEASE.jar micrometer-core-1
+ .1.4.jar nacos-spring-context-0.2.2-RC1.jar ribbon-httpclient-2.3.0.j
+ ar hystrix-javanica-1.5.18.jar spring-cloud-netflix-ribbon-2.1.0.RELE
+ ASE.jar LatencyUtils-2.0.3.jar spring-jdbc-5.1.6.RELEASE.jar bcprov-j
+ dk15on-1.60.jar commons-beanutils-1.8.0.jar spring-aspects-5.1.6.RELE
+ ASE.jar rxnetty-contexts-0.4.9.jar ribbon-transport-2.3.0.jar spring-
+ security-crypto-5.1.5.RELEASE.jar spring-cloud-commons-2.1.0.RELEASE.
+ jar spring-context-5.1.6.RELEASE.jar spring-webmvc-5.1.6.RELEASE.jar 
+ httpclient-4.5.8.jar jersey-core-1.19.1.jar spring-data-jpa-2.1.6.REL
+ EASE.jar commons-lang-2.5.jar jackson-databind-2.9.8.jar jackson-data
+ type-jsr310-2.9.8.jar spring-boot-starter-aop-2.1.4.RELEASE.jar tomca
+ t-embed-core-9.0.17.jar servo-core-0.12.21.jar commons-configuration-
+ 1.8.jar spring-context-support-1.0.1.jar jackson-datatype-jdk8-2.9.8.
+ jar druid-1.1.10.jar netflix-commons-util-0.3.0.jar commons-collectio
+ ns-3.2.1.jar ribbon-2.3.0.jar spring-boot-starter-jdbc-2.1.4.RELEASE.
+ jar fastjson-1.2.58.jar archaius-core-0.7.6.jar spring-cloud-starter-
+ netflix-hystrix-2.1.0.RELEASE.jar log4j-api-2.11.2.jar spring-retry-1
+ .2.4.RELEASE.jar
+Main-Class: com.wonders.govern.GovernApplication
+

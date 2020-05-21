@@ -1,0 +1,142 @@
+package com.wonders.base.example.entity;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Date;
+
+/**
+ * @Description  实体范例
+ * @Author  swq
+ * @Date 2020-02-26 13:03:16
+ */
+
+@Entity
+@Data
+@Table ( name ="GOV_BASE_EXAMPLE" )
+//这里配置实体类的描述
+@ApiModel(value = "测试实体类", description = "用于测试的实体类")
+public class ExampleEntity implements Serializable {
+
+	private static final long serialVersionUID =  7091861924682577534L;
+	@Id
+	@Column(name = "ST_ID" ,unique = true ,nullable = false)
+	@GeneratedValue(generator = "idGenerator")
+	@GenericGenerator(name = "idGenerator" ,strategy = "uuid")
+	//这里配置实体类的属性描述
+	@ApiModelProperty(value = "用户id", name = "stId", example = "qwertyuio")
+	private String stId;
+
+	@Column(name = "ST_NAME" )
+	@ApiModelProperty(value = "用户名", name = "stName", example = "ZhangSan")
+	private String stName;
+
+	@ApiModelProperty(value = "用户身份证号", name = "stIdCard", example = "123456")
+	@Column(name = "ST_ID_CARD" )
+	private String stIdCard;
+
+	@ApiModelProperty(value = "用户地址", name = "stAddress", example = "上海市")
+	@Column(name = "ST_ADDRESS" )
+	private String stAddress;
+
+	@ApiModelProperty(value = "创建人id", name = "creatorId", example = "qwewqewqeqwe")
+	@Column(name = "ST_CREATOR_ID")
+	protected String creatorId;
+
+	/** 创建人名称 */
+	@ApiModelProperty(value = "创建人名称", name = "creatorName", example = "LiSi")
+	@Column(name = "ST_CREATOR_NAME")
+	protected String creatorName;
+
+	/** 创建时间 */
+	@ApiModelProperty(value = "创建时间", name = "createTime", example = "2020-04-28")
+	@Column(name = "DT_CREATE_TIME")
+	protected Date createTime;
+
+	/** 更新时间，默认是当前时间 */
+	@ApiModelProperty(value = "更新时间，默认是当前时间", name = "updateTime", example = "2020-04-28")
+	@Column(name = "DT_UPDATE_TIME")
+	protected Date updateTime = new Date();
+
+	/** 状态 0 表示删除, 1表示可操作 */
+	@ApiModelProperty(value = "状态 0 表示删除, 1表示可操作", name = "status", example = "1")
+	@Column(name = "ST_STATUS")
+	protected Integer status = 1;
+
+	public String getStId() {
+		return stId;
+	}
+
+	public void setStId(String stId) {
+		this.stId = stId;
+	}
+
+	public String getStName() {
+		return stName;
+	}
+
+	public void setStName(String stName) {
+		this.stName = stName;
+	}
+
+	public String getStIdCard() {
+		return stIdCard;
+	}
+
+	public void setStIdCard(String stIdCard) {
+		this.stIdCard = stIdCard;
+	}
+
+	public String getStAddress() {
+		return stAddress;
+	}
+
+	public void setStAddress(String stAddress) {
+		this.stAddress = stAddress;
+	}
+
+	public String getCreatorId() {
+		return creatorId;
+	}
+
+	public void setCreatorId(String creatorId) {
+		this.creatorId = creatorId;
+	}
+
+	public String getCreatorName() {
+		return creatorName;
+	}
+
+	public void setCreatorName(String creatorName) {
+		this.creatorName = creatorName;
+	}
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public Date getUpdateTime() {
+		return updateTime;
+	}
+
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+}
