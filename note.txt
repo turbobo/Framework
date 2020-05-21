@@ -1,0 +1,6 @@
+1、把dist下的文件复制到static，dist目录不要复制过去
+2、需要引入thymeleaf模板，在application.yml
+    #配置html资源路径
+    spring:
+    thymeleaf:
+    prefix: classpath:static/
